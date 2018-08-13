@@ -1,0 +1,12 @@
+
+
+
+* callbacks.c  
+* display.c  find exact feature list
+             end_capture_display
+* device.c  
+* shader.c   setup_shader_interface
+* testpattern.c fill_in_test_pattern_capabilities
+                set_testpattern_capture_parms
+
+
