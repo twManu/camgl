@@ -132,6 +132,7 @@ int main(int argc, char * argv[])
 	{
 	  displaydata.window_width = argstruct.window_width;
 	  displaydata.window_height = argstruct.window_height;
+    printf("display %dx%d\n", displaydata.window_width, displaydata.window_height);
 	  displaystat = setup_capture_display(&sourceparams, &displaydata,
 					      &argc, argv);
 	  if (0 == displaystat)

@@ -217,6 +217,7 @@ int parse_command_line (int argc, char * argv[], Cmdargs_t *args)
 		"[-d devicefile][-w width][-h height]",
 		"[-e  LUMA |  YUV420 |  YUV422 | RGB ] [-D index]"
 		);
+fprintf(stderr, "Example: %s -d /dev/video0 -w 1280 -h 720 -D1\n", argv[0]);
 	fprintf(stderr, "   index 0: default window dimension, as that of image\n");
 	for( i=1; i<SZ_DIM; ++i ) 
 		fprintf(stderr, "       %d: %dx%d\n",\

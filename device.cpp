@@ -1134,6 +1134,7 @@ int set_image_size_and_format(Sourceparams_t * sourceparams)
 	  requested_width = sourceparams->image_width;
 	  supplied_height = format.fmt.pix.height;
 	  supplied_width = format.fmt.pix.width;
+    printf("capture %dx%d\n", supplied_width, supplied_height);
 	  
 	  if ((requested_height != supplied_height) ||
 	      (requested_width != supplied_width))

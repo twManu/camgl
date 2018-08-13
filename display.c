@@ -204,6 +204,7 @@ int setup_capture_display(Sourceparams_t * sourceparams,
 	  else
 	    {
 	      shaderfilename = select_shader_file(sourceparams);
+        printf("use shader %s\n", shaderfilename);
 	      status = setup_shader(shaderfilename, sourceparams, displaydata);
 
 	      if (-1 == status)
