@@ -1,5 +1,5 @@
 glutcam/README.txt
-sudo apt-get install freeglut3-dev libxmu-dev
+sudo apt-get install freeglut3-dev libxmu-dev libglew-dev
 v 0.1 gpk 1/2/08
 v 0.2 gpk 1/7/09
 
