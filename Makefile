@@ -17,10 +17,11 @@ ifeq ($(DO_RGB),)
 LDFLAGS = -L/usr/X11R6/lib -g -lGLEW -lglut -lGLU -lGL -lXmu -lX11
 OPT =
 else
-LDFLAGS = -L/usr/X11R6/lib -g -lGLEW -lglut -lGLU -lGL -lXmu -lX11\
+LDFLAGS = -L/usr/X11R6/lib -L/usr/lib/x86_64-linux-gnu -g -lGLEW -lglut -lGLU -lGL -lXmu -lX11\
 	-lopencv_highgui -lopencv_core -lopencv_imgproc -lopencv_features2d\
-	-lopencv_contrib -lopencv_gpu -lopencv_objdetect -lopencv_calib3d
-OPT += -DDEF_RGB `pkg-config --cflags opencv`
+	-lopencv_objdetect -lopencv_calib3d
+#	-lopencv_contrib -lopencv_gpu -lopencv_objdetect -lopencv_calib3d
+OPT += -DDEF_RGB `pkg-config --cflags opencv` -I/usr/include/opencv
 endif
 
 # profiling:
